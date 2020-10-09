@@ -40,5 +40,13 @@ The idea is to link up GPU-based hardware and write software to detect the cente
 
 The CPU is the 6 core GPU NVIDIA XAVIER NX.  To drive up the 2 servo motors, I used a 16 Channel 12-bit Pulse Wave Modulation PWM PCA9685 (from TaoBao it’s only S$3.50 w/o shipping) An additional 5V voltage can be supplied to the green pins except that I tap on the 5V from the XAVIER GPIO pins.  The servo motors are a pair of quite study industrial grade RDS3115 Digital Servo Motors and not those flimsy plastic looking SG90 servo motors.  The camera is a compatible Pi like Camera but this version I got can even give higher resolutions are higher frames per seconds. Good enough to do the job.
 
+![XAVIER-1](https://github.com/StrongRay/AI-Robotic-Engineer/blob/main/ARTICLE-1.jpg)
+
+# Software Engineering
+
+Software Engineering has never change much.  You still need to do breakdown of work into simpler manageable parts and then debug at component level.  There are many times in reaching the final outcome, that it became challenging as troubleshooting hardware, sometimes, it’s a loose cable and/or GPIO config.  In one instance, I reconfigured my NVIDIA GPIO until it booted in #bash and I almost thought I lost my codes and NVIDIA system.  It was scary to loose control of the entire GPU hardware.  Luckily with stackoverflow, I managed to locate similar recovery and figured out how to modify the boot up parameters and managed to save my board.  It involved sed on extlinux.conf. It was very scary as you boot in bash with a prompt and there is nothing you can do to get back to the gui. 
+Also, initial camera quality was quite bad and I adjusted to the right parameters and the camera is capable of getting the right details.  The software part is manageable but I opt for Python Multiprocessing and learnt to send signals to terminate all processes.  Also, revised my basics of cv2 to the next level and brushed up on python skill.  You cannot be manipulating images using OpenCV without delving into numpy.  
+
+# The software
 
 
