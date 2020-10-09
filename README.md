@@ -20,3 +20,11 @@ Now, back to the NPark SPOT, on top of the robot is mounted with “open air equ
 
 Now, back to the NPark SPOT, on top of the robot is mounted with “open air equipment” If you stare closely, everything is kind of very exposed to the weather.   Not sure if this is can handle the rain fall.  There is a command center nearby controlling this unit and is likely relaying info either through WIFI or via a telco LINK.   Thus this is “Remote Control” (see picture below)  The use of this term is very important, it means Humans are manually sending instructions to the robot instead of the robot doing it’s own thing.  Hence, the AI is in the brains of the guy moving the joy stick.
 
+![SPOT-NPARKS-IMDA-1](https://github.com/StrongRay/AI-Robotic-Engineer/blob/main/Spot-NPARKS-1.jpg)
+
+The Intel RealSense Camera ( ready component) is used and so is the entire Boston Dynamics SPOT.  So the add-on is kind of pretty ugly with cable ties but it surfice as a POC.  So what is interesting is not whether you need to build all the components on your own, but to see how to integrate the stuff you get off the shelf and form a system.  
+There is an out of the box controller of the BOSTON Dynamics SPOT which is an android based controller that can access the in-built Camera system.  Hence, begs the question, why have cameras on top when out of the box, the “dog” already has cameras. 
+
+
+
+
