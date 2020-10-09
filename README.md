@@ -64,8 +64,8 @@ Why the code works on detecting faces, detection can be via hand, fingers, etc r
 
 # Here’s how it looks
 
-[![TEXT](http://img.youtube.com/vi/ycEKB1FtqS8/0.jpg)](http://www.youtube.com/watch?v=ycEKB1FtqS8)
-
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=ycEKB1FtqS8" target="_blank">
+  <img src="http://img.youtube.com/vi/ycEKB1FtqS8/0.jpg" alt="20 Hours" width="640" height="480" border="0" /></a>
 
 # Lessons learnt
 
