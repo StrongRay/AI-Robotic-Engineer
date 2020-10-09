@@ -49,4 +49,30 @@ Also, initial camera quality was quite bad and I adjusted to the right parameter
 
 # The software
 
+![XAVIER-2](https://github.com/StrongRay/AI-Robotic-Engineer/blob/main/ARTICLE-2.jpg)
+
+The graphing system has some bells and whistles. Added a custom True Type Font TTF to highlight on the X and Y axis and move it as and when the new Face Box center is defined. Toggle guidelines can be done by G. R – resets the servos to (90,90) 
+
+**cv2.CascadeClassifier** is being used with **Haarcascade_frontalface_default.xml**
+**detectMultiScale** helps to identify the faces
+Based on the face rectangle, the corresponding pan and tilt angles are obtained
+A separate process makes use of these angles to move the servos  
+
+Yeah, a true blue AI engineer will by now roll his/her eyes and say cv2.CascaseClassifier is not AI, no trained models =)  But the goal is that each code can be replaced like with MTCNN or a custom trained tensorflow model or YOLO v4 model.  Whatever it is, it’s another set of skills and exploration.
+
+Why the code works on detecting faces, detection can be via hand, fingers, etc recognition.  Modular coding means that each detection method can be replaced by functionalities and the rest of the code , such as the graphing and servo movement, can still be used.
+
+# Here’s how it looks
+
+![Webcam](http://img.youtube.com/vi/ycEKB1FtqS8tch/0.jpg)](https://youtube.com/watch?v=cEKB1FtqS8tch)
+
+# Lessons learnt
+
+1.	Comment your codes as you need to remind yourself what has been done and why a value is placed. Always save your codes so that you can revert to your last working copy.
+2.	After the boot up to #bash scare, backup your software codes so that if you need to get back your hard work
+3.	Python is interpretive and no compilation is needed, it’s sufficient to use it for quick learning.   If codes are in C++, it should be more secure (protect your IP) however, the ideas are all copiable and reverse engineerable. There is no real IP.  It’s a combination of coding skills that you need.  The more you stuff you add, the rarer is the skill set
+4.	Make your software modular, so you can verify each individual parts and then combine as a whole.  
+5.	Multiprocessing python makes it interesting to spin off code segments dedicated to particular tasks.  The key is in passing information between processes. Global doesn’t quite work, you got to use namespaces.  
+6.	The joy is in seeing the servo motors move in response to the location of the face.  And the pan and tilt moves in sync
+7.	Can expand the detection into a generic class and then have child classes with each detection type
 
