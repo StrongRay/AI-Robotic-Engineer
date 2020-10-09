@@ -18,6 +18,7 @@ An example is the use of SPOT Robot by Boston Dynamics.  Nparks used this togeth
 Boston Dynamics has a great robot (https://www.bostondynamics.com/spot/technology) (USD 75K ?) https://www.youtube.com/watch?v=nkcKdfL7G3A) cute yellow “doggie” robot.  China version is not too far off (https://www.unitree.com/products/a1) but obviously a lot cheaper.  Look at the end section for the skills they are looking for.
 Now, back to the NPark SPOT, on top of the robot is mounted with “open air equipment” If you stare closely, everything is kind of very exposed to the weather.   Not sure if this is can handle the rain fall.  There is a command center nearby controlling this unit and is likely relaying info either through WIFI or via a telco LINK.   Thus this is “Remote Control” (see picture below)  The use of this term is very important, it means Humans are manually sending instructions to the robot instead of the robot doing it’s own thing.  Hence, the AI is in the brains of the guy moving the joy stick.
 
+
 Now, back to the NPark SPOT, on top of the robot is mounted with “open air equipment” If you stare closely, everything is kind of very exposed to the weather.   Not sure if this is can handle the rain fall.  There is a command center nearby controlling this unit and is likely relaying info either through WIFI or via a telco LINK.   Thus this is “Remote Control” (see picture below)  The use of this term is very important, it means Humans are manually sending instructions to the robot instead of the robot doing it’s own thing.  Hence, the AI is in the brains of the guy moving the joy stick.
 
 ![SPOT-NPARKS-IMDA-1](https://github.com/StrongRay/AI-Robotic-Engineer/blob/main/Spot-NPARKS-1.jpg)
@@ -76,4 +77,26 @@ Why the code works on detecting faces, detection can be via hand, fingers, etc r
 5.	Multiprocessing python makes it interesting to spin off code segments dedicated to particular tasks.  The key is in passing information between processes. Global doesn’t quite work, you got to use namespaces.  
 6.	The joy is in seeing the servo motors move in response to the location of the face.  And the pan and tilt moves in sync
 7.	Can expand the detection into a generic class and then have child classes with each detection type
+
+# If I am a student or someone looking to develop skills
+
+The china group unitree, https://www.unitree.com/careers gives a glimpse on the jobs available in China and the skills they are looking for. 
+
+![SKILLS](https://github.com/StrongRay/AI-Robotic-Engineer/blob/main/Skills.jpg)
+
+By the way, 20,000 – 40,000 RMB divide roughly by 5, gives S$4,000 to S$8,000 per month for a robotic engineer, which by China standard quite a respectable monthly pay.  STM32 is a microcontroller, presumably used by the Robot.  I shall attempt to classify the skill type needed for a job role in a similar nature.
+Any IT professional will need to be multi-skilled.  The skills must and will include soft and hard skills.  Soft skills refers to skills likely transportable and relatively constant across years. Hard skills are specific knowledge on a specific area of knowledge.  A true team contributor must be able to have both soft and hard skills.  So I am going to classify the skills into various grouping.  The list is not prescriptive and is an instance of time in 2020, and no single person has all these skills.  But while a maths teacher is not a science specialist, the maths teacher needs to know basic physics, chemistry  and biology.  
+
+
+While the list is not perfect and will change across time, there is no way one can say they can be a one-man show and can do everything.  There is a need for generalist as well as specialist.  What one can do is to ask “Am I interested in this domain because of passion or because of the money”.  If it is the later, life will be tedious if one hates debugging.  But passion cannot feed the family nor provide for fine dinning to court your partner.  But I believe you cannot choose to specialize at say, RPG programming on the AS/400 when the jobs out there are rare.  You will need to stare into the crystal ball and read a lot on the web to see how to shield yourself from being obsoleted.  The all important skill becomes the ability to learn, unlearn and relearn.  Abit of a cliché but true.  The moment the course material is created, a newer version is released.  That is why self-directed learning becomes ever more important.  
+
+# Acknowledgement and useful links 
+
+Absolute one must to count the pins and make sure you plug in the right GND and VCC https://www.jetsonhacks.com/nvidia-jetson-xavier-nx-gpio-header-pinout/
+
+Servo control using CircuitPython is a set of library to control the servos 
+https://learn.adafruit.com/16-channel-pwm-servo-driver/python-circuitpython
+
+Pan Tilt Tracking with Pi and OpenCV [base code which I morph into current code]
+https://www.pyimagesearch.com/2019/04/01/pan-tilt-face-tracking-with-a-raspberry-pi-and-opencv/
 
