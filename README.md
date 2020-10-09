@@ -64,7 +64,8 @@ Why the code works on detecting faces, detection can be via hand, fingers, etc r
 
 # Here’s how it looks
 
-![Webcam](http://img.youtube.com/vi/ycEKB1FtqS8tch/0.jpg)](https://youtube.com/watch?v=cEKB1FtqS8tch)
+[![TEXT](http://img.youtube.com/vi/ycEKB1FtqS8/0.jpg)](http://www.youtube.com/watch?v=ycEKB1FtqS8)
+
 
 # Lessons learnt
 
