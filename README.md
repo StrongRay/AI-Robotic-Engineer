@@ -25,6 +25,20 @@ Now, back to the NPark SPOT, on top of the robot is mounted with “open air equ
 The Intel RealSense Camera ( ready component) is used and so is the entire Boston Dynamics SPOT.  So the add-on is kind of pretty ugly with cable ties but it surfice as a POC.  So what is interesting is not whether you need to build all the components on your own, but to see how to integrate the stuff you get off the shelf and form a system.  
 There is an out of the box controller of the BOSTON Dynamics SPOT which is an android based controller that can access the in-built Camera system.  Hence, begs the question, why have cameras on top when out of the box, the “dog” already has cameras. 
 
+![SPOT-NPARKS-IMDA-2](https://github.com/StrongRay/AI-Robotic-Engineer/blob/main/Spot-NPARKS-2.jpg)
+
+Given that its human control, one can deduce that the Boston Dynamics Software Development Platform is not used https://dev.bostondynamics.com/readme 
+https://github.com/boston-dynamics/spot-sdk/tree/master/python/bosdyn-client has nice Python accessable codes to control the robot
+https://www.smartcitiesworld.net/AcuCustom/Sitename/DAM/022/Spot_Bishan_park_1_GovTech_Singa_rm.jpg
+The next part of this article is to share how this can be learnt on your own, through a variety of equipment and tools.  In particular, 
+
+# Gist of Mini Proof-of-Concept (POC) 
+
+The idea is to link up GPU-based hardware and write software to detect the center of the face and control the servos when the face center position 
+
+# Hardware used 
+
+The CPU is the 6 core GPU NVIDIA XAVIER NX.  To drive up the 2 servo motors, I used a 16 Channel 12-bit Pulse Wave Modulation PWM PCA9685 (from TaoBao it’s only S$3.50 w/o shipping) An additional 5V voltage can be supplied to the green pins except that I tap on the 5V from the XAVIER GPIO pins.  The servo motors are a pair of quite study industrial grade RDS3115 Digital Servo Motors and not those flimsy plastic looking SG90 servo motors.  The camera is a compatible Pi like Camera but this version I got can even give higher resolutions are higher frames per seconds. Good enough to do the job.
 
 
 
